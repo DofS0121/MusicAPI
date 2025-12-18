@@ -1,0 +1,123 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Flutter\\Music\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\music\\music\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\music\\music\\controllers\\songscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\controllers\\songscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\music\\music\\controllers\\artistscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\controllers\\artistscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\music\\music\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\music\\music\\controllers\\lyricscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\controllers\\lyricscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\music\\music\\data\\musicdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\data\\musicdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MusicDbContext.cs",
+              "DocumentMoniker": "D:\\Flutter\\Music\\Music\\Data\\MusicDbContext.cs",
+              "RelativeDocumentMoniker": "Music\\Data\\MusicDbContext.cs",
+              "ToolTip": "D:\\Flutter\\Music\\Music\\Data\\MusicDbContext.cs",
+              "RelativeToolTip": "Music\\Data\\MusicDbContext.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAwAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T02:21:30.053Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Flutter\\Music\\Music\\Program.cs",
+              "RelativeDocumentMoniker": "Music\\Program.cs",
+              "ToolTip": "D:\\Flutter\\Music\\Music\\Program.cs",
+              "RelativeToolTip": "Music\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T17:12:33.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Flutter\\Music\\Music\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Music\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Flutter\\Music\\Music\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Music\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T17:10:39.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ArtistsController.cs",
+              "DocumentMoniker": "D:\\Flutter\\Music\\Music\\Controllers\\ArtistsController.cs",
+              "RelativeDocumentMoniker": "Music\\Controllers\\ArtistsController.cs",
+              "ToolTip": "D:\\Flutter\\Music\\Music\\Controllers\\ArtistsController.cs",
+              "RelativeToolTip": "Music\\Controllers\\ArtistsController.cs",
+              "ViewState": "AgIAAKAAAAAAAAAAAAAiwMUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T17:10:38.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SongsController.cs",
+              "DocumentMoniker": "D:\\Flutter\\Music\\Music\\Controllers\\SongsController.cs",
+              "RelativeDocumentMoniker": "Music\\Controllers\\SongsController.cs",
+              "ToolTip": "D:\\Flutter\\Music\\Music\\Controllers\\SongsController.cs",
+              "RelativeToolTip": "Music\\Controllers\\SongsController.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAYwLAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T17:09:58.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LyricsController.cs",
+              "DocumentMoniker": "D:\\Flutter\\Music\\Music\\Controllers\\LyricsController.cs",
+              "RelativeDocumentMoniker": "Music\\Controllers\\LyricsController.cs",
+              "ToolTip": "D:\\Flutter\\Music\\Music\\Controllers\\LyricsController.cs",
+              "RelativeToolTip": "Music\\Controllers\\LyricsController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAA4wFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T15:22:46.002Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
