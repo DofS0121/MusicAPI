@@ -14,6 +14,10 @@ namespace Music.Data
         public DbSet<Artist> Artists { get; set; }
         public DbSet<SongLyric> SongLyrics { get; set; }
 
+        public DbSet<Category> Categories { get; set; }
+
+        public DbSet<SongCategory> SongCategories { get; set; }
+
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -39,6 +43,19 @@ namespace Music.Data
                 .WithMany(s => s.FavoritedBy)
                 .HasForeignKey(uf => uf.SongId)
                 .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<SongCategory>()
+                .HasKey(sc => new { sc.SongId, sc.CategoryId });
+
+            modelBuilder.Entity<SongCategory>()
+                .HasOne(sc => sc.Song)
+                .WithMany(s => s.SongCategories)
+                .HasForeignKey(sc => sc.SongId);
+
+            modelBuilder.Entity<SongCategory>()
+                .HasOne(sc => sc.Category)
+                .WithMany(c => c.SongCategories)
+                .HasForeignKey(sc => sc.CategoryId);
         }
     }
 }
