@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Music\\MusicAPI-main\\MusicAPI-main\\Music\\wwwroot\\audio\\76b17b9a-5eed-4d6b-8336-d86809096144.mp3",
+      "PackagePath": "staticwebassets\\audio\\76b17b9a-5eed-4d6b-8336-d86809096144.mp3"
+    },
+    {
+      "Id": "E:\\Music\\MusicAPI-main\\MusicAPI-main\\Music\\wwwroot\\audio\\e9271ff1-98ca-4a1c-a5e0-cad1687d26b4.mp3",
+      "PackagePath": "staticwebassets\\audio\\e9271ff1-98ca-4a1c-a5e0-cad1687d26b4.mp3"
+    },
+    {
+      "Id": "E:\\Music\\MusicAPI-main\\MusicAPI-main\\Music\\wwwroot\\audio\\f9545321-1765-4340-a11c-afbe28480f51.mp3",
+      "PackagePath": "staticwebassets\\audio\\f9545321-1765-4340-a11c-afbe28480f51.mp3"
+    },
+    {
+      "Id": "E:\\Music\\MusicAPI-main\\MusicAPI-main\\Music\\wwwroot\\avatar_artist\\artist_e88aa615-6c3b-4ec3-bc70-032150cc677e.png",
+      "PackagePath": "staticwebassets\\avatar_artist\\artist_e88aa615-6c3b-4ec3-bc70-032150cc677e.png"
+    },
+    {
+      "Id": "E:\\Music\\MusicAPI-main\\MusicAPI-main\\Music\\wwwroot\\avatar_artist\\artist_f7ae1c19-d4ce-469c-8a4a-5fe4fe3406f6.png",
+      "PackagePath": "staticwebassets\\avatar_artist\\artist_f7ae1c19-d4ce-469c-8a4a-5fe4fe3406f6.png"
+    },
+    {
+      "Id": "E:\\Music\\MusicAPI-main\\MusicAPI-main\\Music\\wwwroot\\covers\\3f3dc9c9-c222-4ef6-a212-5fba7f1379af.png",
+      "PackagePath": "staticwebassets\\covers\\3f3dc9c9-c222-4ef6-a212-5fba7f1379af.png"
+    },
+    {
+      "Id": "E:\\Music\\MusicAPI-main\\MusicAPI-main\\Music\\wwwroot\\covers\\571edf0f-29ff-4997-ba71-f59414ceb308.png",
+      "PackagePath": "staticwebassets\\covers\\571edf0f-29ff-4997-ba71-f59414ceb308.png"
+    },
+    {
+      "Id": "E:\\Music\\MusicAPI-main\\MusicAPI-main\\Music\\wwwroot\\covers\\89238e32-6d04-4c95-ba34-8c5379f702f8.png",
+      "PackagePath": "staticwebassets\\covers\\89238e32-6d04-4c95-ba34-8c5379f702f8.png"
+    },
+    {
+      "Id": "E:\\Music\\MusicAPI-main\\MusicAPI-main\\Music\\wwwroot\\uploads\\avatars\\avatar_1_f9946302-2b25-4772-8627-2e45ba301f9d.jpg",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\avatar_1_f9946302-2b25-4772-8627-2e45ba301f9d.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Music.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Music.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Music.props",
+      "PackagePath": "build\\Music.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Music.props",
+      "PackagePath": "buildMultiTargeting\\Music.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Music.props",
+      "PackagePath": "buildTransitive\\Music.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
