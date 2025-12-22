@@ -223,3 +223,4 @@ D:\Flutter\Music\Music\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
 D:\Flutter\Music\Music\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\Flutter\Music\Music\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 D:\Flutter\Music\Music\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Flutter\Music\Music\obj\Debug\net8.0\Music.sourcelink.json

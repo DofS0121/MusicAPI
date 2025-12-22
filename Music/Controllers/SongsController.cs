@@ -20,12 +20,15 @@ namespace Music.Controllers
 
         // =================================================
         // GET: api/songs
+        // (Danh sách bài hát – Home / List)
         // =================================================
         [HttpGet]
         public IActionResult GetAllSongs()
         {
             var songs = _context.Songs
                 .Include(s => s.Artist)
+                .Include(s => s.SongCategories)
+                    .ThenInclude(sc => sc.Category)
                 .OrderByDescending(s => s.Id)
                 .Select(s => new
                 {
@@ -33,11 +36,14 @@ namespace Music.Controllers
                     title = s.Title,
                     artist = s.Artist.Name,
                     artistId = s.ArtistId,
-                    artistAvatar = s.Artist.AvatarUrl,
-                    audioUrl = s.AudioUrl,
                     coverUrl = s.CoverUrl,
+                    audioUrl = s.AudioUrl,
                     duration = s.Duration,
-                    views = s.Views
+                    views = s.Views,
+                    releaseDate = s.ReleaseDate,
+                    categories = s.SongCategories
+                        .Select(sc => sc.Category.Name)
+                        .ToList()
                 })
                 .ToList();
 
@@ -46,29 +52,26 @@ namespace Music.Controllers
 
         // =================================================
         // GET: api/songs/{id}
-        // (Song Detail – cho Player Page)
+        // (Swipe trái – THÔNG TIN BÀI HÁT)
         // =================================================
         [HttpGet("{id}")]
-        public IActionResult GetSongDetail(int id)
+        public IActionResult GetSongInfo(int id)
         {
             var song = _context.Songs
                 .Include(s => s.Artist)
+                .Include(s => s.SongCategories)
+                    .ThenInclude(sc => sc.Category)
                 .Where(s => s.Id == id)
                 .Select(s => new
                 {
                     id = s.Id,
                     title = s.Title,
-                    audioUrl = s.AudioUrl,
                     coverUrl = s.CoverUrl,
-                    duration = s.Duration,
-                    views = s.Views,
-                    artist = new
-                    {
-                        id = s.Artist.Id,
-                        name = s.Artist.Name,
-                        avatar = s.Artist.AvatarUrl,
-                        bio = s.Artist.Bio
-                    }
+                    releaseDate = s.ReleaseDate,
+                    artist = s.Artist.Name,
+                    categories = s.SongCategories
+                        .Select(sc => sc.Category.Name)
+                        .ToList()
                 })
                 .FirstOrDefault();
 
@@ -80,7 +83,7 @@ namespace Music.Controllers
 
         // =================================================
         // GET: api/songs/artist/{artistId}
-        // (Swipe trái – bài hát của ca sĩ)
+        // (Danh sách bài của ca sĩ – giữ nguyên)
         // =================================================
         [HttpGet("artist/{artistId}")]
         public IActionResult GetSongsByArtist(int artistId)
@@ -92,8 +95,8 @@ namespace Music.Controllers
                 {
                     id = s.Id,
                     title = s.Title,
-                    audioUrl = s.AudioUrl,
                     coverUrl = s.CoverUrl,
+                    audioUrl = s.AudioUrl,
                     duration = s.Duration
                 })
                 .ToList();
@@ -111,7 +114,6 @@ namespace Music.Controllers
             if (model.AudioFile == null || model.CoverFile == null)
                 return BadRequest(new { message = "Thiếu file audio hoặc cover" });
 
-            // Check artist
             var artist = _context.Artists.FirstOrDefault(a => a.Id == model.ArtistId);
             if (artist == null)
                 return BadRequest(new { message = "Artist không tồn tại" });
@@ -126,7 +128,7 @@ namespace Music.Controllers
             if (!allowCover.Contains(coverExt))
                 return BadRequest(new { message = "Cover không hợp lệ" });
 
-            // ===== Folder =====
+            // ===== Save files =====
             var audioDir = Path.Combine(_env.WebRootPath, "audio");
             var coverDir = Path.Combine(_env.WebRootPath, "covers");
             Directory.CreateDirectory(audioDir);
@@ -147,6 +149,7 @@ namespace Music.Controllers
                 ArtistId = model.ArtistId,
                 ArtistType = model.ArtistType,
                 Duration = model.Duration,
+                ReleaseDate = model.ReleaseDate,
                 AudioUrl = "/audio/" + audioName,
                 CoverUrl = "/covers/" + coverName,
                 Views = 0
@@ -155,6 +158,21 @@ namespace Music.Controllers
             _context.Songs.Add(song);
             _context.SaveChanges();
 
+            // ===== ADD CATEGORIES =====
+            if (model.CategoryIds.Any())
+            {
+                var songCategories = model.CategoryIds
+                    .Select(cid => new SongCategory
+                    {
+                        SongId = song.Id,
+                        CategoryId = cid
+                    })
+                    .ToList();
+
+                _context.SongCategories.AddRange(songCategories);
+                _context.SaveChanges();
+            }
+
             return Ok(new
             {
                 message = "Upload thành công",
@@ -162,7 +180,9 @@ namespace Music.Controllers
             });
         }
 
+        // =================================================
         // POST: api/songs/{id}/view
+        // =================================================
         [HttpPost("{id}/view")]
         public IActionResult IncreaseView(int id)
         {
@@ -176,7 +196,9 @@ namespace Music.Controllers
             return Ok(new { views = song.Views });
         }
 
+        // =================================================
         // GET: api/songs/search?q=abc
+        // =================================================
         [HttpGet("search")]
         public IActionResult Search(string q)
         {
@@ -201,6 +223,5 @@ namespace Music.Controllers
 
             return Ok(songs);
         }
-
     }
 }
