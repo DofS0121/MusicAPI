@@ -333,7 +333,7 @@
         }
       }
     },
-    "/api/Favorites": {
+    "/api/favorites": {
       "post": {
         "tags": [
           "Favorites"
@@ -342,17 +342,46 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UserFavorite"
+                "$ref": "#/components/schemas/AddFavoriteDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UserFavorite"
+                "$ref": "#/components/schemas/AddFavoriteDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UserFavorite"
+                "$ref": "#/components/schemas/AddFavoriteDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Favorites"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddFavoriteDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddFavoriteDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddFavoriteDto"
               }
             }
           }
@@ -364,7 +393,7 @@
         }
       }
     },
-    "/api/Favorites/{userId}": {
+    "/api/favorites/{userId}": {
       "get": {
         "tags": [
           "Favorites"
@@ -748,6 +777,20 @@
   },
   "components": {
     "schemas": {
+      "AddFavoriteDto": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "songId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "CategoryCreateModel": {
         "required": [
           "name"
@@ -804,20 +847,6 @@
           "lyricText": {
             "type": "string",
             "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "UserFavorite": {
-        "type": "object",
-        "properties": {
-          "userId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "songId": {
-            "type": "integer",
-            "format": "int32"
           }
         },
         "additionalProperties": false

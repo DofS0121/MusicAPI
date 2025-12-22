@@ -196,14 +196,30 @@
   {
     "ContainingType": "Music.Controllers.FavoritesController",
     "Method": "AddFavorite",
-    "RelativePath": "api/Favorites",
+    "RelativePath": "api/favorites",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "fav",
-        "Type": "Music.Models.UserFavorite",
+        "Name": "dto",
+        "Type": "Music.Models.AddFavoriteDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Music.Controllers.FavoritesController",
+    "Method": "RemoveFavorite",
+    "RelativePath": "api/favorites",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Music.Models.AddFavoriteDto",
         "IsRequired": true
       }
     ],
@@ -212,7 +228,7 @@
   {
     "ContainingType": "Music.Controllers.FavoritesController",
     "Method": "GetFavorites",
-    "RelativePath": "api/Favorites/{userId}",
+    "RelativePath": "api/favorites/{userId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

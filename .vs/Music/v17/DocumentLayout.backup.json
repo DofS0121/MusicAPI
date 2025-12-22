@@ -1,66 +1,86 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Flutter\\Music\\",
+  "WorkspaceRootPath": "D:\\Flutter\\MusicAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\music\\music\\controllers\\songscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\controllers\\songscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\musicapi\\music\\controllers\\favoritescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\controllers\\favoritescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\music\\music\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\music\\music\\models\\categorycreatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\models\\categorycreatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\music\\music\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\music\\music\\data\\musicdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\data\\musicdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\music\\music\\models\\songcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\models\\songcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\music\\music\\controllers\\songcategoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\musicapi\\music\\controllers\\songcategoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\controllers\\songcategoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\music\\music\\controllers\\lyricscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\controllers\\lyricscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\musicapi\\music\\data\\musicdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\data\\musicdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\music\\music\\models\\song.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\models\\song.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\musicapi\\music\\models\\addfavoritedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\models\\addfavoritedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\music\\music\\models\\songuploadmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\models\\songuploadmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\music\\music\\models\\songlyriccreatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\musicapi\\music\\models\\songlyriccreatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\models\\songlyriccreatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\music\\music\\models\\songlyric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\musicapi\\music\\controllers\\songscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\controllers\\songscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\musicapi\\music\\models\\userfavorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\models\\userfavorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\musicapi\\music\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\musicapi\\music\\models\\songlyric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\models\\songlyric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\music\\music\\controllers\\artistscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\musicapi\\music\\models\\artistcreateupdatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\models\\artistcreateupdatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\musicapi\\music\\controllers\\artistscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\controllers\\artistscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\music\\music\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\musicapi\\music\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\music\\music\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\musicapi\\music\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\musicapi\\music\\models\\categorycreatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\models\\categorycreatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\musicapi\\music\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\musicapi\\music\\models\\songcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\models\\songcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\musicapi\\music\\controllers\\lyricscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\controllers\\lyricscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\musicapi\\music\\models\\song.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\models\\song.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\musicapi\\music\\models\\songuploadmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\models\\songuploadmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|d:\\flutter\\musicapi\\music\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E2DFD0-B978-43BD-B4D7-83427F721128}|Music\\Music.csproj|solutionrelative:music\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,13 +94,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "MusicDbContext.cs",
-              "DocumentMoniker": "D:\\Flutter\\Music\\Music\\Data\\MusicDbContext.cs",
+              "DocumentMoniker": "D:\\Flutter\\MusicAPI\\Music\\Data\\MusicDbContext.cs",
               "RelativeDocumentMoniker": "Music\\Data\\MusicDbContext.cs",
-              "ToolTip": "D:\\Flutter\\Music\\Music\\Data\\MusicDbContext.cs",
+              "ToolTip": "D:\\Flutter\\MusicAPI\\Music\\Data\\MusicDbContext.cs",
               "RelativeToolTip": "Music\\Data\\MusicDbContext.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAcwDoAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAQwDoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-18T02:21:30.053Z",
               "IsPinned": true,
@@ -88,128 +108,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CategoryCreateModel.cs",
-              "DocumentMoniker": "D:\\Flutter\\Music\\Music\\Models\\CategoryCreateModel.cs",
-              "RelativeDocumentMoniker": "Music\\Models\\CategoryCreateModel.cs",
-              "ToolTip": "D:\\Flutter\\Music\\Music\\Models\\CategoryCreateModel.cs",
-              "RelativeToolTip": "Music\\Models\\CategoryCreateModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T15:58:00.21Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "D:\\Flutter\\Music\\Music\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "Music\\Controllers\\CategoryController.cs",
-              "ToolTip": "D:\\Flutter\\Music\\Music\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "Music\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAUwCYAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T15:52:14.227Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SongUploadModel.cs",
-              "DocumentMoniker": "D:\\Flutter\\Music\\Music\\Models\\SongUploadModel.cs",
-              "RelativeDocumentMoniker": "Music\\Models\\SongUploadModel.cs",
-              "ToolTip": "D:\\Flutter\\Music\\Music\\Models\\SongUploadModel.cs",
-              "RelativeToolTip": "Music\\Models\\SongUploadModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T15:25:40.059Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Song.cs",
-              "DocumentMoniker": "D:\\Flutter\\Music\\Music\\Models\\Song.cs",
-              "RelativeDocumentMoniker": "Music\\Models\\Song.cs",
-              "ToolTip": "D:\\Flutter\\Music\\Music\\Models\\Song.cs",
-              "RelativeToolTip": "Music\\Models\\Song.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCEAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T15:25:24.923Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SongsController.cs",
-              "DocumentMoniker": "D:\\Flutter\\Music\\Music\\Controllers\\SongsController.cs",
-              "RelativeDocumentMoniker": "Music\\Controllers\\SongsController.cs",
-              "ToolTip": "D:\\Flutter\\Music\\Music\\Controllers\\SongsController.cs",
-              "RelativeToolTip": "Music\\Controllers\\SongsController.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAMwDsAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T17:09:58.017Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LyricsController.cs",
-              "DocumentMoniker": "D:\\Flutter\\Music\\Music\\Controllers\\LyricsController.cs",
-              "RelativeDocumentMoniker": "Music\\Controllers\\LyricsController.cs",
-              "ToolTip": "D:\\Flutter\\Music\\Music\\Controllers\\LyricsController.cs",
-              "RelativeToolTip": "Music\\Controllers\\LyricsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T15:22:46.002Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Category.cs",
-              "DocumentMoniker": "D:\\Flutter\\Music\\Music\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "Music\\Models\\Category.cs",
-              "ToolTip": "D:\\Flutter\\Music\\Music\\Models\\Category.cs",
-              "RelativeToolTip": "Music\\Models\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Title": "AddFavoriteDto.cs",
+              "DocumentMoniker": "D:\\Flutter\\MusicAPI\\Music\\Models\\AddFavoriteDto.cs",
+              "RelativeDocumentMoniker": "Music\\Models\\AddFavoriteDto.cs",
+              "ToolTip": "D:\\Flutter\\MusicAPI\\Music\\Models\\AddFavoriteDto.cs",
+              "RelativeToolTip": "Music\\Models\\AddFavoriteDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T15:29:02.653Z",
+              "WhenOpened": "2025-12-22T16:39:21.511Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SongCategory.cs",
-              "DocumentMoniker": "D:\\Flutter\\Music\\Music\\Models\\SongCategory.cs",
-              "RelativeDocumentMoniker": "Music\\Models\\SongCategory.cs",
-              "ToolTip": "D:\\Flutter\\Music\\Music\\Models\\SongCategory.cs",
-              "RelativeToolTip": "Music\\Models\\SongCategory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T15:29:47.232Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SongCategoriesController.cs",
-              "DocumentMoniker": "D:\\Flutter\\Music\\Music\\Controllers\\SongCategoriesController.cs",
-              "RelativeDocumentMoniker": "Music\\Controllers\\SongCategoriesController.cs",
-              "ToolTip": "D:\\Flutter\\Music\\Music\\Controllers\\SongCategoriesController.cs",
-              "RelativeToolTip": "Music\\Controllers\\SongCategoriesController.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAgwC8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T15:34:43.784Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
               "Title": "SongLyricCreateModel.cs",
-              "DocumentMoniker": "D:\\Flutter\\Music\\Music\\Models\\SongLyricCreateModel.cs",
+              "DocumentMoniker": "D:\\Flutter\\MusicAPI\\Music\\Models\\SongLyricCreateModel.cs",
               "RelativeDocumentMoniker": "Music\\Models\\SongLyricCreateModel.cs",
-              "ToolTip": "D:\\Flutter\\Music\\Music\\Models\\SongLyricCreateModel.cs",
+              "ToolTip": "D:\\Flutter\\MusicAPI\\Music\\Models\\SongLyricCreateModel.cs",
               "RelativeToolTip": "Music\\Models\\SongLyricCreateModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -218,11 +134,88 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 5,
+              "Title": "SongsController.cs",
+              "DocumentMoniker": "D:\\Flutter\\MusicAPI\\Music\\Controllers\\SongsController.cs",
+              "RelativeDocumentMoniker": "Music\\Controllers\\SongsController.cs",
+              "ToolTip": "D:\\Flutter\\MusicAPI\\Music\\Controllers\\SongsController.cs",
+              "RelativeToolTip": "Music\\Controllers\\SongsController.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAowA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T17:09:58.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SongCategoriesController.cs",
+              "DocumentMoniker": "D:\\Flutter\\MusicAPI\\Music\\Controllers\\SongCategoriesController.cs",
+              "RelativeDocumentMoniker": "Music\\Controllers\\SongCategoriesController.cs",
+              "ToolTip": "D:\\Flutter\\MusicAPI\\Music\\Controllers\\SongCategoriesController.cs",
+              "RelativeToolTip": "Music\\Controllers\\SongCategoriesController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAkwFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T15:34:43.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FavoritesController.cs",
+              "DocumentMoniker": "D:\\Flutter\\MusicAPI\\Music\\Controllers\\FavoritesController.cs",
+              "RelativeDocumentMoniker": "Music\\Controllers\\FavoritesController.cs",
+              "ToolTip": "D:\\Flutter\\MusicAPI\\Music\\Controllers\\FavoritesController.cs",
+              "RelativeToolTip": "Music\\Controllers\\FavoritesController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAiwEwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T16:27:55.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserFavorite.cs",
+              "DocumentMoniker": "D:\\Flutter\\MusicAPI\\Music\\Models\\UserFavorite.cs",
+              "RelativeDocumentMoniker": "Music\\Models\\UserFavorite.cs",
+              "ToolTip": "D:\\Flutter\\MusicAPI\\Music\\Models\\UserFavorite.cs",
+              "RelativeToolTip": "Music\\Models\\UserFavorite.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T16:33:19.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ArtistsController.cs",
+              "DocumentMoniker": "D:\\Flutter\\MusicAPI\\Music\\Controllers\\ArtistsController.cs",
+              "RelativeDocumentMoniker": "Music\\Controllers\\ArtistsController.cs",
+              "ToolTip": "D:\\Flutter\\MusicAPI\\Music\\Controllers\\ArtistsController.cs",
+              "RelativeToolTip": "Music\\Controllers\\ArtistsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T17:10:38.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Flutter\\MusicAPI\\Music\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Music\\Models\\User.cs",
+              "ToolTip": "D:\\Flutter\\MusicAPI\\Music\\Models\\User.cs",
+              "RelativeToolTip": "Music\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T16:42:17.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "SongLyric.cs",
-              "DocumentMoniker": "D:\\Flutter\\Music\\Music\\Models\\SongLyric.cs",
+              "DocumentMoniker": "D:\\Flutter\\MusicAPI\\Music\\Models\\SongLyric.cs",
               "RelativeDocumentMoniker": "Music\\Models\\SongLyric.cs",
-              "ToolTip": "D:\\Flutter\\Music\\Music\\Models\\SongLyric.cs",
+              "ToolTip": "D:\\Flutter\\MusicAPI\\Music\\Models\\SongLyric.cs",
               "RelativeToolTip": "Music\\Models\\SongLyric.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -231,23 +224,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Flutter\\Music\\Music\\Program.cs",
-              "RelativeDocumentMoniker": "Music\\Program.cs",
-              "ToolTip": "D:\\Flutter\\Music\\Music\\Program.cs",
-              "RelativeToolTip": "Music\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "ArtistCreateUpdateModel.cs",
+              "DocumentMoniker": "D:\\Flutter\\MusicAPI\\Music\\Models\\ArtistCreateUpdateModel.cs",
+              "RelativeDocumentMoniker": "Music\\Models\\ArtistCreateUpdateModel.cs",
+              "ToolTip": "D:\\Flutter\\MusicAPI\\Music\\Models\\ArtistCreateUpdateModel.cs",
+              "RelativeToolTip": "Music\\Models\\ArtistCreateUpdateModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T17:12:33.028Z"
+              "WhenOpened": "2025-12-22T16:38:10.245Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 12,
               "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\Flutter\\Music\\Music\\Controllers\\AuthController.cs",
+              "DocumentMoniker": "D:\\Flutter\\MusicAPI\\Music\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Music\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\Flutter\\Music\\Music\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Flutter\\MusicAPI\\Music\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Music\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -255,16 +249,99 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ArtistsController.cs",
-              "DocumentMoniker": "D:\\Flutter\\Music\\Music\\Controllers\\ArtistsController.cs",
-              "RelativeDocumentMoniker": "Music\\Controllers\\ArtistsController.cs",
-              "ToolTip": "D:\\Flutter\\Music\\Music\\Controllers\\ArtistsController.cs",
-              "RelativeToolTip": "Music\\Controllers\\ArtistsController.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAowLcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\Flutter\\MusicAPI\\Music\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Music\\Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\Flutter\\MusicAPI\\Music\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Music\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAcwFMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T17:10:38.411Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-19T15:52:14.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LyricsController.cs",
+              "DocumentMoniker": "D:\\Flutter\\MusicAPI\\Music\\Controllers\\LyricsController.cs",
+              "RelativeDocumentMoniker": "Music\\Controllers\\LyricsController.cs",
+              "ToolTip": "D:\\Flutter\\MusicAPI\\Music\\Controllers\\LyricsController.cs",
+              "RelativeToolTip": "Music\\Controllers\\LyricsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T15:22:46.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Song.cs",
+              "DocumentMoniker": "D:\\Flutter\\MusicAPI\\Music\\Models\\Song.cs",
+              "RelativeDocumentMoniker": "Music\\Models\\Song.cs",
+              "ToolTip": "D:\\Flutter\\MusicAPI\\Music\\Models\\Song.cs",
+              "RelativeToolTip": "Music\\Models\\Song.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T15:25:24.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SongUploadModel.cs",
+              "DocumentMoniker": "D:\\Flutter\\MusicAPI\\Music\\Models\\SongUploadModel.cs",
+              "RelativeDocumentMoniker": "Music\\Models\\SongUploadModel.cs",
+              "ToolTip": "D:\\Flutter\\MusicAPI\\Music\\Models\\SongUploadModel.cs",
+              "RelativeToolTip": "Music\\Models\\SongUploadModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T15:25:40.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CategoryCreateModel.cs",
+              "DocumentMoniker": "D:\\Flutter\\MusicAPI\\Music\\Models\\CategoryCreateModel.cs",
+              "RelativeDocumentMoniker": "Music\\Models\\CategoryCreateModel.cs",
+              "ToolTip": "D:\\Flutter\\MusicAPI\\Music\\Models\\CategoryCreateModel.cs",
+              "RelativeToolTip": "Music\\Models\\CategoryCreateModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T15:58:00.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\Flutter\\MusicAPI\\Music\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Music\\Models\\Category.cs",
+              "ToolTip": "D:\\Flutter\\MusicAPI\\Music\\Models\\Category.cs",
+              "RelativeToolTip": "Music\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T15:29:02.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SongCategory.cs",
+              "DocumentMoniker": "D:\\Flutter\\MusicAPI\\Music\\Models\\SongCategory.cs",
+              "RelativeDocumentMoniker": "Music\\Models\\SongCategory.cs",
+              "ToolTip": "D:\\Flutter\\MusicAPI\\Music\\Models\\SongCategory.cs",
+              "RelativeToolTip": "Music\\Models\\SongCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T15:29:47.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Flutter\\MusicAPI\\Music\\Program.cs",
+              "RelativeDocumentMoniker": "Music\\Program.cs",
+              "ToolTip": "D:\\Flutter\\MusicAPI\\Music\\Program.cs",
+              "RelativeToolTip": "Music\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T17:12:33.028Z"
             }
           ]
         }

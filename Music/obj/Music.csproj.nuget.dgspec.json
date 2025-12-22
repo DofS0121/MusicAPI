@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Flutter\\Music\\Music\\Music.csproj": {}
+    "D:\\Flutter\\MusicAPI\\Music\\Music.csproj": {}
   },
   "projects": {
-    "D:\\Flutter\\Music\\Music\\Music.csproj": {
+    "D:\\Flutter\\MusicAPI\\Music\\Music.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Flutter\\Music\\Music\\Music.csproj",
+        "projectUniqueName": "D:\\Flutter\\MusicAPI\\Music\\Music.csproj",
         "projectName": "Music",
-        "projectPath": "D:\\Flutter\\Music\\Music\\Music.csproj",
+        "projectPath": "D:\\Flutter\\MusicAPI\\Music\\Music.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\Flutter\\Music\\Music\\obj\\",
+        "outputPath": "D:\\Flutter\\MusicAPI\\Music\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
