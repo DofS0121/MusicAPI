@@ -194,6 +194,38 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Music.Controllers.ChartsController",
+    "Method": "GetChart",
+    "RelativePath": "api/charts/{type}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Music.Controllers.ChartsController",
+    "Method": "CreateSnapshot",
+    "RelativePath": "api/charts/snapshot/{type}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Music.Controllers.FavoritesController",
     "Method": "AddFavorite",
     "RelativePath": "api/favorites",

@@ -14,3 +14,5 @@ wwwroot\covers\89238e32-6d04-4c95-ba34-8c5379f702f8.png
 wwwroot\covers\d9d5abfc-b91e-4e55-abf2-8224c977b7f8.png
 wwwroot\covers\fbac023a-b8cd-4b23-92c9-f19dfc39a190.png
 wwwroot\uploads\avatars\avatar_1_f9946302-2b25-4772-8627-2e45ba301f9d.jpg
+wwwroot\uploads\avatars\avatar_1_69ef6753-8463-4e06-9426-b5fd50313b81.jpg
+wwwroot\uploads\avatars\avatar_1_e1eefd5e-d675-4809-996e-debfd317e9de.jpg

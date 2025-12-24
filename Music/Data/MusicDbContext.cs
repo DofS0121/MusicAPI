@@ -18,6 +18,10 @@ namespace Music.Data
 
         public DbSet<SongCategory> SongCategories { get; set; }
 
+        public DbSet<SongRanking> SongRankings { get; set; }
+
+
+
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

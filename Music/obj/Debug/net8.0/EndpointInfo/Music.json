@@ -333,6 +333,50 @@
         }
       }
     },
+    "/api/charts/{type}": {
+      "get": {
+        "tags": [
+          "Charts"
+        ],
+        "parameters": [
+          {
+            "name": "type",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/charts/snapshot/{type}": {
+      "post": {
+        "tags": [
+          "Charts"
+        ],
+        "parameters": [
+          {
+            "name": "type",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/favorites": {
       "post": {
         "tags": [
