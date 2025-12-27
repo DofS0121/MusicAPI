@@ -20,6 +20,10 @@ namespace Music.Data
 
         public DbSet<SongRanking> SongRankings { get; set; }
 
+        public DbSet<Playlist> Playlists { get; set; }
+
+        public DbSet<PlaylistSong> PlaylistSongs { get; set; }
+
 
 
 
@@ -60,6 +64,19 @@ namespace Music.Data
                 .HasOne(sc => sc.Category)
                 .WithMany(c => c.SongCategories)
                 .HasForeignKey(sc => sc.CategoryId);
+
+            modelBuilder.Entity<PlaylistSong>()
+                .HasKey(ps => new { ps.PlaylistId, ps.SongId });
+
+            modelBuilder.Entity<PlaylistSong>()
+                .HasOne(ps => ps.Playlist)
+                .WithMany(p => p.PlaylistSongs)
+                .HasForeignKey(ps => ps.PlaylistId);
+
+            modelBuilder.Entity<PlaylistSong>()
+                .HasOne(ps => ps.Song)
+                .WithMany()
+                .HasForeignKey(ps => ps.SongId);
         }
     }
 }

@@ -103,6 +103,95 @@ namespace Music.Controllers
             });
         }
 
+        // ==========================
+        // PUT: api/auth/update/{userId}
+        // ==========================
+        [HttpPut("update/{userId}")]
+        public IActionResult UpdateUser(int userId, [FromBody] UpdateUserModel model)
+        {
+            var user = _context.Users.FirstOrDefault(u => u.Id == userId);
+            if (user == null)
+                return NotFound(new { message = "User không tồn tại!" });
+
+            if (!string.IsNullOrEmpty(model.FullName))
+                user.FullName = model.FullName;
+
+            if (!string.IsNullOrEmpty(model.Email))
+            {
+                bool exists = _context.Users.Any(x => x.Email == model.Email && x.Id != userId);
+                if (exists) return BadRequest(new { message = "Email này đã được sử dụng!" });
+
+                user.Email = model.Email;
+            }
+
+            _context.SaveChanges();
+
+            return Ok(new
+            {
+                message = "Cập nhật thông tin thành công",
+                user = new
+                {
+                    id = user.Id,
+                    fullName = user.FullName,
+                    email = user.Email,
+                    avatar = user.AvatarUrl
+                }
+            });
+        }
+
+        // =============================================
+        // POST: api/auth/update-avatar/{userId}
+        // =============================================
+        [HttpPost("update-avatar/{userId}")]
+        public async Task<IActionResult> UpdateAvatar(int userId, IFormFile avatar)
+        {
+            if (avatar == null || avatar.Length == 0)
+                return BadRequest(new { message = "File không hợp lệ!" });
+
+            var user = _context.Users.FirstOrDefault(u => u.Id == userId);
+            if (user == null)
+                return NotFound(new { message = "User không tồn tại!" });
+
+            var allowed = new[] { ".jpg", ".jpeg", ".png", ".webp" };
+            var ext = Path.GetExtension(avatar.FileName).ToLower();
+            if (!allowed.Contains(ext))
+                return BadRequest(new { message = "Chỉ nhận JPG / PNG / WEBP" });
+
+            string folder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/avatars");
+            if (!Directory.Exists(folder)) Directory.CreateDirectory(folder);
+
+            // Tên file mới
+            string fileName = $"user_{userId}_{Guid.NewGuid()}{ext}";
+            string filePath = Path.Combine(folder, fileName);
+
+            // Lưu file
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await avatar.CopyToAsync(stream);
+            }
+
+            // Nếu có avatar cũ → xóa file cũ (optional)
+            if (!string.IsNullOrEmpty(user.AvatarUrl))
+            {
+                string oldFile = Path.Combine(folder, user.AvatarUrl);
+                if (System.IO.File.Exists(oldFile)) System.IO.File.Delete(oldFile);
+            }
+
+            user.AvatarUrl = fileName;
+            _context.SaveChanges();
+
+            string baseUrl = $"{Request.Scheme}://{Request.Host}";
+            string avatarUrl = $"{baseUrl}/uploads/avatars/{fileName}";
+
+            return Ok(new
+            {
+                message = "Cập nhật avatar thành công",
+                avatar = avatarUrl
+            });
+        }
+
+
+
         // =============================================
         // POST: api/auth/upload-avatar/{userId}
         // =============================================

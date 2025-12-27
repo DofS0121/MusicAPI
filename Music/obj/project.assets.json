@@ -3051,11 +3051,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Flutter\\MusicAPI\\Music\\Music.csproj",
+      "projectUniqueName": "D:\\Flutter\\MusicAPI_25_12\\MusicAPI\\Music\\Music.csproj",
       "projectName": "Music",
-      "projectPath": "D:\\Flutter\\MusicAPI\\Music\\Music.csproj",
+      "projectPath": "D:\\Flutter\\MusicAPI_25_12\\MusicAPI\\Music\\Music.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\Flutter\\MusicAPI\\Music\\obj\\",
+      "outputPath": "D:\\Flutter\\MusicAPI_25_12\\MusicAPI\\Music\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
