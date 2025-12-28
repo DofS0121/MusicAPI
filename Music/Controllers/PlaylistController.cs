@@ -66,7 +66,8 @@ namespace Music.Controllers
                         s.AudioUrl,
                         s.Duration,
                         s.ArtistId,
-                        ArtistName = s.Artist.Name
+                        ArtistName = s.Artist.Name,
+                        views = s.Views
                     })
                 .ToList();
 

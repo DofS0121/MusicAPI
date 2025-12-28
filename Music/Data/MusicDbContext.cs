@@ -24,7 +24,9 @@ namespace Music.Data
 
         public DbSet<PlaylistSong> PlaylistSongs { get; set; }
 
+        public DbSet<UserFollowArtist> UserFollowArtists { get; set; }
 
+        public DbSet<PasswordOtp> PasswordOtps { get; set; }
 
 
 
@@ -77,6 +79,21 @@ namespace Music.Data
                 .HasOne(ps => ps.Song)
                 .WithMany()
                 .HasForeignKey(ps => ps.SongId);
+
+            modelBuilder.Entity<UserFollowArtist>()
+              .HasKey(f => new { f.UserId, f.ArtistId });
+
+            modelBuilder.Entity<UserFollowArtist>()
+                .HasOne(f => f.User)
+                .WithMany()
+                .HasForeignKey(f => f.UserId);
+
+            modelBuilder.Entity<UserFollowArtist>()
+                .HasOne(f => f.Artist)
+                .WithMany()
+                .HasForeignKey(f => f.ArtistId);
+
+            modelBuilder.Entity<PasswordOtp>().ToTable("password_otps");
         }
     }
 }

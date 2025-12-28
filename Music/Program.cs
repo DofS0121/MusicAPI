@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using AppointmentsAPI.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.IdentityModel.Tokens;
 using Music.Data;
+using Music.Services;
 using Music.Services;
 using System.Text;
 
@@ -25,6 +27,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ChartSnapshotService>();
 builder.Services.AddHostedService<ChartSnapshotWorker>();
+builder.Services.AddScoped<EmailService>();
 
 
 

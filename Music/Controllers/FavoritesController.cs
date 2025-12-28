@@ -63,7 +63,9 @@ namespace Music.Controllers
                     title = f.Song.Title,
                     artist = f.Song.Artist.Name,
                     coverUrl = f.Song.CoverUrl,
-                    audioUrl = f.Song.AudioUrl
+                    audioUrl = f.Song.AudioUrl,
+                    artistId = f.Song.ArtistId,
+                    views = f.Song.Views
                 })
                 .ToList();
 

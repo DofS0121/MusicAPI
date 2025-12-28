@@ -458,3 +458,8 @@ D:\Flutter\MusicAPI_25_12\MusicAPI\Music\obj\Debug\net8.0\refint\Music.dll
 D:\Flutter\MusicAPI_25_12\MusicAPI\Music\obj\Debug\net8.0\Music.pdb
 D:\Flutter\MusicAPI_25_12\MusicAPI\Music\obj\Debug\net8.0\Music.genruntimeconfig.cache
 D:\Flutter\MusicAPI_25_12\MusicAPI\Music\obj\Debug\net8.0\ref\Music.dll
+D:\Flutter\MusicAPI_25_12\MusicAPI\Music\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\Flutter\MusicAPI_25_12\MusicAPI\Music\bin\Debug\net8.0\MailKit.dll
+D:\Flutter\MusicAPI_25_12\MusicAPI\Music\bin\Debug\net8.0\MimeKit.dll
+D:\Flutter\MusicAPI_25_12\MusicAPI\Music\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\Flutter\MusicAPI_25_12\MusicAPI\Music\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll

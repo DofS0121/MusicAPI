@@ -46,21 +46,22 @@ namespace Music.Controllers
         public IActionResult GetArtist(int id)
         {
             var artist = _context.Artists
-                .AsNoTracking()
-                .Where(a => a.Id == id)
-                .Select(a => new
-                {
-                    id = a.Id,
-                    name = a.Name,
-                    avatar = a.AvatarUrl,
-                    bio = a.Bio
-                })
-                .FirstOrDefault();
+                .Include(a => a.Songs)
+                .FirstOrDefault(a => a.Id == id);
 
             if (artist == null)
                 return NotFound(new { message = "Artist not found" });
 
-            return Ok(artist);
+            var dto = new ArtistDTO
+            {
+                Id = artist.Id,
+                Name = artist.Name,
+                AvatarUrl = artist.AvatarUrl,
+                Bio = artist.Bio,
+                TotalSongs = artist.Songs.Count
+            };
+
+            return Ok(dto);
         }
 
         // ==========================
@@ -73,18 +74,19 @@ namespace Music.Controllers
                 return NotFound(new { message = "Artist not found" });
 
             var songs = _context.Songs
-                .AsNoTracking()
                 .Where(s => s.ArtistId == id)
-                .OrderByDescending(s => s.Views)
-                .Select(s => new
-                {
+                .Select(s => new {
                     id = s.Id,
                     title = s.Title,
+                    artist = s.Artist.Name, // thêm tên ca sĩ để hiển thị
+                    artistId = s.ArtistId,
                     audioUrl = s.AudioUrl,
+                    coverUrl = s.CoverUrl,
                     duration = s.Duration,
+                    bio = s.Artist.Bio,
+                    avatarUrl = s.Artist.AvatarUrl,
                     views = s.Views
-                })
-                .ToList();
+                }).ToList();
 
             return Ok(songs);
         }
@@ -192,6 +194,96 @@ namespace Music.Controllers
                 message = "Artist updated",
                 avatar = artist.AvatarUrl
             });
+        }
+
+        // ==========================
+        // POST: api/artists/follow
+        // ==========================
+        [HttpPost("follow")]
+        public IActionResult FollowArtist(int userId, int artistId)
+        {
+            if (!_context.Artists.Any(a => a.Id == artistId))
+                return NotFound(new { message = "Artist not found" });
+
+            bool existed = _context.UserFollowArtists
+                .Any(f => f.UserId == userId && f.ArtistId == artistId);
+
+            if (existed) return BadRequest(new { message = "Đã quan tâm nghệ sĩ này" });
+
+            _context.UserFollowArtists.Add(new UserFollowArtist
+            {
+                UserId = userId,
+                ArtistId = artistId
+            });
+            _context.SaveChanges();
+
+            return Ok(new { message = "Đã quan tâm nghệ sĩ" });
+        }
+
+        // ==========================
+        // DELETE: api/artists/unfollow
+        // ==========================
+        [HttpDelete("unfollow")]
+        public IActionResult UnfollowArtist(int userId, int artistId)
+        {
+            var follow = _context.UserFollowArtists
+                .FirstOrDefault(f => f.UserId == userId && f.ArtistId == artistId);
+
+            if (follow == null) return BadRequest(new { message = "Chưa quan tâm nghệ sĩ này" });
+
+            _context.UserFollowArtists.Remove(follow);
+            _context.SaveChanges();
+
+            return Ok(new { message = "Đã bỏ quan tâm" });
+        }
+
+        // GET: api/artists/{id}/isFollowed?userId=1
+        [HttpGet("{id}/isFollowed")]
+        public IActionResult IsFollowed(int id, int userId)
+        {
+            bool isFollowed = _context.UserFollowArtists
+                .Any(f => f.UserId == userId && f.ArtistId == id);
+
+            return Ok(new { isFollowed });
+        }
+
+        // GET: api/artists/search?query=ade
+        [HttpGet("search")]
+        public IActionResult SearchArtists(string query)
+        {
+            query = query.ToLower();
+            var artists = _context.Artists
+                .Where(a => a.Name.ToLower().Contains(query))
+                .Select(a => new {
+                    id = a.Id,
+                    name = a.Name,
+                    avatar = a.AvatarUrl,
+                    totalSongs = _context.Songs.Count(s => s.ArtistId == a.Id)
+                })
+                .ToList();
+
+            return Ok(artists);
+        }
+
+        // ==========================
+        // GET: api/artists/followed?userId=1
+        // ==========================
+        [HttpGet("followed")]
+        public IActionResult GetFollowedArtists(int userId)
+        {
+            var artists = _context.UserFollowArtists
+                .Where(f => f.UserId == userId)
+                .Select(f => new
+                {
+                    id = f.Artist.Id,
+                    name = f.Artist.Name,
+                    avatar = f.Artist.AvatarUrl,
+                    bio = f.Artist.Bio,
+                    totalSongs = _context.Songs.Count(s => s.ArtistId == f.ArtistId)
+                })
+                .ToList();
+
+            return Ok(artists);
         }
     }
 }

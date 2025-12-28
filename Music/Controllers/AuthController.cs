@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AppointmentsAPI.Services;
+using Microsoft.AspNetCore.Mvc;
 using Music.Data;
-using Music.Models;
 using Music.Helpers;
+using Music.Models;
+using Music.Services;
 
 namespace Music.Controllers
 {
@@ -11,11 +13,13 @@ namespace Music.Controllers
     {
         private readonly MusicDbContext _context;
         private readonly IConfiguration _config;
+        private readonly EmailService _emailService;
 
-        public AuthController(MusicDbContext context, IConfiguration config)
+        public AuthController(MusicDbContext context, IConfiguration config, EmailService emailService)
         {
             _context = context;
             _config = config;
+            _emailService = emailService;
         }
 
         // ==========================
@@ -268,5 +272,124 @@ namespace Music.Controllers
             }
         }
 
+        [HttpPost("verify-password")]
+        public IActionResult VerifyPassword([FromBody] VerifyPasswordRequest req)
+        {
+            var user = _context.Users.FirstOrDefault(u => u.Id == req.UserId);
+            if (user == null) return NotFound(new { success = false, message = "Không tìm thấy user!" });
+
+            if (user.PasswordHash != PasswordHelper.Hash(req.CurrentPassword))
+                return Ok(new { success = false, message = "Mật khẩu hiện tại không đúng!" });
+
+            return Ok(new { success = true, message = "Xác thực thành công!" });
+        }
+
+        [HttpPost("send-otp")]
+        public async Task<IActionResult> SendOtp([FromBody] SendOtpRequest req, [FromServices] EmailService emailService)
+        {
+            var user = _context.Users.FirstOrDefault(u => u.Id == req.UserId);
+            if (user == null) return NotFound(new { success = false, message = "Không tìm thấy user!" });
+
+            string otp = new Random().Next(100000, 999999).ToString();
+
+            _context.Add(new PasswordOtp
+            {
+                UserId = req.UserId,
+                OTP = otp,
+                ExpireAt = DateTime.Now.AddMinutes(5),
+                IsUsed = false
+            });
+
+            await _context.SaveChangesAsync();
+
+            await emailService.SendEmailAsync(
+                user.Email,
+                "🔐 Mã xác minh đổi mật khẩu",
+                $"<h2>Mã OTP của bạn là <b>{otp}</b></h2><p>Có hiệu lực 5 phút.</p>"
+            );
+
+            return Ok(new { success = true, message = "Đã gửi OTP qua email!" });
+        }
+
+        [HttpPost("verify-otp")]
+        public IActionResult VerifyOtp([FromBody] VerifyOtpRequest req)
+        {
+            var otp = _context.Set<PasswordOtp>()
+                .Where(x => x.UserId == req.UserId && x.OTP == req.OTP && x.IsUsed == false && x.ExpireAt > DateTime.Now)
+                .OrderByDescending(x => x.Id)
+                .FirstOrDefault();
+
+            if (otp == null)
+                return Ok(new { success = false, message = "OTP không hợp lệ hoặc đã hết hạn!" });
+
+            otp.IsUsed = true;
+            _context.SaveChanges();
+
+            return Ok(new { success = true, message = "OTP hợp lệ, tiếp tục đổi mật khẩu." });
+        }
+
+        [HttpPut("change-password")]
+        public IActionResult ChangePassword([FromBody] ChangePasswordRequest req)
+        {
+            var user = _context.Users.FirstOrDefault(u => u.Id == req.UserId);
+            if (user == null) return NotFound(new { success = false, message = "User không tồn tại!" });
+
+            string newPassHash = PasswordHelper.Hash(req.NewPassword);
+            string oldPass = user.PasswordHash;
+
+            if (oldPass == newPassHash)
+                return BadRequest(new { success = false, message = "Mật khẩu mới không được giống mật khẩu cũ!" });
+
+            user.PasswordHash = newPassHash;
+            _context.SaveChanges();
+
+            return Ok(new { success = true, message = "Đổi mật khẩu thành công!" });
+        }
+
+        [HttpPost("forgot-password/send-otp")]
+        public async Task<IActionResult> ForgotPasswordSendOtp([FromBody] ForgotPasswordEmail req)
+        {
+            var user = _context.Users.FirstOrDefault(u => u.Email == req.Email);
+            if (user == null)
+                return Ok(new { success = false, message = "Email không tồn tại!" });
+
+            string otp = new Random().Next(100000, 999999).ToString();
+
+            _context.Add(new PasswordOtp
+            {
+                UserId = user.Id,
+                OTP = otp,
+                ExpireAt = DateTime.Now.AddMinutes(5),
+                IsUsed = false
+            });
+            await _context.SaveChangesAsync();
+
+            await _emailService.SendEmailAsync(
+                user.Email,
+                "🔐 OTP đặt lại mật khẩu",
+                $"<h2>Mã OTP: <b>{otp}</b></h2><p>Có hiệu lực 5 phút.</p>"
+            );
+
+            return Ok(new { success = true, userId = user.Id, message = "OTP đã gửi!" });
+        }
+
+        public class ForgotPasswordEmail
+        {
+            public string Email { get; set; }
+        }
+
+        [HttpPost("get-by-email")]
+        public IActionResult GetUserByEmail([FromBody] EmailRequest req)
+        {
+            if (string.IsNullOrEmpty(req.Email))
+                return BadRequest(new { message = "Email không hợp lệ" });
+
+            var user = _context.Users.FirstOrDefault(u => u.Email == req.Email);
+
+            if (user == null)
+                return NotFound(new { message = "Không tìm thấy user" });
+
+            return Ok(new { user.Id, user.Email });
+        }
     }
 }
